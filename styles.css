@@ -9,6 +9,13 @@
   font-family: "M PLUS 1", sans-serif;
 }
 
+.btn{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -30,8 +37,8 @@ body {
   gap: 20px;
 }
 .music {
-  width: 250px;
-  height: 350px;
+  width: 270px;
+  height: 330px;
   border-radius: 20px;
   background-color: var(--gray-light);
   display: flex;
@@ -41,8 +48,8 @@ body {
   align-items: center;
 }
 .album {
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 240px;
   background-image: url(https://s.mxmcdn.net/images-storage/albums4/0/5/4/4/8/5/46584450_800_800.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -51,13 +58,14 @@ body {
 }
 .controls {
   width: 220px;
-  height: 85px;
-  background-color: red;
+  height: 45px;
   border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 .playList {
   width: 380px;
-  height: 350px;
+  height: 330px;
   border-radius: 20px;
   padding: 15px;
   box-sizing: border-box;
@@ -116,15 +124,11 @@ body {
 .item {
   height: 100px;
   width: 100%;
-  cursor: pointer;
-  border: none;
-  outline: none;
   transition: 0.2s;
   border-radius: 10px;
   display: flex;
   gap: 10px;
   padding: 16px 10px;
-  background-color: transparent;
   font-weight: 700;
   color: var(--gray);
 }
@@ -147,4 +151,15 @@ body {
 .snippet {
   width: 50px;
   text-align: right;
+}
+.btnMain{
+    font-size: 16px;
+    transform: scale(1);
+    width: 20%;
+    color: var(--blue-light);
+    transition: .2s;
+}
+.btnMain:active{
+    transform: scale(1.3);
+    transition: .2s;
 }
