@@ -44,6 +44,20 @@
           line-height: 12px;
         }
       }
+      span {
+        @media (max-width: 820px) {
+          display: none;
+        }
+      }
+      .settings {
+        display: none;
+        @media (max-width: 820px) {
+          display: flex;
+          justify-content: flex-end;
+          padding: 0;
+          margin: 8px 0 0 auto;
+        }
+      }
     }
   }
   .list {

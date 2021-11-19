@@ -5,6 +5,7 @@
 @import "./components/music.scss";
 @import "./components/playList.scss";
 @import "./components/search.scss";
+@import "./components/btnFloat.scss";
 
 @import "./utils/custom.scss";
 
@@ -21,8 +22,11 @@ body {
   align-items: center;
   background-color: $gray-light;
   @media (max-width: 820px) {
-    padding: 50px 0;
     height: 100%;
+    padding: 50px 0;
+  }
+  @media (max-width: 460px) {
+    padding: 0;
   }
 }
 .container {
@@ -44,7 +48,7 @@ body {
     height: 100%;
     flex-direction: column;
     background-color: transparent;
-    padding: 40px 0;
+    padding: 60px 0 10px;
     gap: 10px;
     box-sizing: border-box;
   }
@@ -56,5 +60,6 @@ body {
     padding: 0;
     gap: 0;
     box-shadow: none;
+    padding: 70px 0;
   }
 }
