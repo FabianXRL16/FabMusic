@@ -3,17 +3,17 @@
 
 .btnFloat {
   display: none;
-  @media (max-width: 820px) {
-    @include btn($w: 60px, $h: 60px, $bg: $blue-light, $fs: 20px, $c: white);
-    display: block;
-    position: fixed;
-    bottom: 40px;
-    right: 80px;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-  @media (max-width: 460px) {
-    bottom: 20px;
-    right: 20px;
-  }
+  // @media (max-width: 820px) {
+  //   @include btn($w: 60px, $h: 60px, $bg: $blue-light, $fs: 20px, $c: white);
+  //   display: block;
+  //   position: fixed;
+  //   bottom: 40px;
+  //   right: 80px;
+  //   border-radius: 50%;
+  //   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  // }
+  // @media (max-width: 460px) {
+  //   bottom: 20px;
+  //   right: 20px;
+  // }
 }

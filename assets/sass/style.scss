@@ -48,8 +48,8 @@ body {
     height: 100%;
     flex-direction: column;
     background-color: transparent;
-    padding: 60px 0 10px;
-    gap: 10px;
+    padding: 80px 0 10px;
+    gap: 0;
     box-sizing: border-box;
   }
   @media (max-width: 460px) {
@@ -58,8 +58,8 @@ body {
     flex-direction: column;
     background-color: transparent;
     padding: 0;
-    gap: 0;
+    gap: 10px;
     box-shadow: none;
-    padding: 70px 0;
+    padding: 75px 0 10px;
   }
 }
