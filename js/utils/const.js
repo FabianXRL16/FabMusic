@@ -2,6 +2,8 @@ let $input = document.querySelector(".input");
 
 let $album = document.querySelector(".album");
 
+let audios = []
+
 let $nameSong = document.querySelector(".nameSong");
 
 let $random = document.querySelector("#random");
@@ -159,6 +161,7 @@ let playList = [
 export {
   $input,
   $album,
+  audios,
   $nameSong,
   $random,
   $back,
