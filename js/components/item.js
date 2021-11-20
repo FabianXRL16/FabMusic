@@ -1,6 +1,9 @@
+import { audios } from "../utils/const.js";
 export default function showPlayList(list, action) {
   let $list = document.querySelector(".list");
   list.map((item, index) => {
+    audios[index] = new Audio(item.preview);
+
     let $item = document.createElement("BUTTON");
     $item.classList.add("item");
     $item.classList.add("btn");
@@ -29,7 +32,7 @@ export default function showPlayList(list, action) {
     $duration.appendChild(time);
     $snippet.appendChild($duration);
 
-    $item.addEventListener("click", () => action(item));
+    $item.addEventListener("click", () => action(index));
 
     $item.appendChild($pos);
     $item.appendChild($name);
