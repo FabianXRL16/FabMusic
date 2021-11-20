@@ -1,16 +1,11 @@
-import {
-  $input,
-  $random,
-  $back,
-  $play,
-  $next,
-  $repeat,
-  playList,
-} from "./const.js";
+import { playList } from "./utils/const.js";
 
-import song from "./components.js";
+import song from "./components/item.js";
+import listenMusic from "./components/music.js";
 
-song(playList)
+listenMusic()
+
+song(playList, listenMusic);
 
 // import search from "./api.js";
 
