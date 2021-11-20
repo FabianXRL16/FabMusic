@@ -2,6 +2,8 @@ let $input = document.querySelector(".input");
 
 let $album = document.querySelector(".album");
 
+let $nameSong = document.querySelector(".nameSong");
+
 let $random = document.querySelector("#random");
 let $back = document.querySelector("#back");
 let $play = document.querySelector("#play");
@@ -154,4 +156,14 @@ let playList = [
   },
 ];
 
-export { $input, $album, $random, $back, $play, $next, $repeat, playList };
+export {
+  $input,
+  $album,
+  $nameSong,
+  $random,
+  $back,
+  $play,
+  $next,
+  $repeat,
+  playList,
+};
