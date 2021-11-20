@@ -9,10 +9,11 @@ import {
   $repeat,
   playList,
 } from "../utils/const.js";
-
+let cunrretSong = 0;
 export default function listen(i = 0) {
   toShowCurrentSong(playList[i]);
   mediaPlayer(i);
+  cunrretSong = i;
 }
 
 function toShowCurrentSong(item) {
@@ -26,10 +27,11 @@ function mediaPlayer(e) {
     i === e ? audios[i].play() : audios[i].pause();
   }
 }
-
+$play.addEventListener("click", () => playSong(audios[cunrretSong ]));
+$repeat.addEventListener("click", () => repeatSong(audios[cunrretSong ]));
 function playSong(player) {
   player.paused ? player.play() : player.pause();
 }
-// function repeatSong(player) {
-//   player.currentTime = 0;
-// }
+function repeatSong(player) {
+  player.currentTime = 0;
+}
