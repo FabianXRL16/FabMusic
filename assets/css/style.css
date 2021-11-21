@@ -311,6 +311,7 @@
   font-size: 20px;
   line-height: 20px;
   color: #0d081f;
+  padding-top: 5px;
 }
 .currentSong .animationCurrentSong {
   width: 100%;

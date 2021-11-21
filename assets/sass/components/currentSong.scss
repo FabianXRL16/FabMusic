@@ -47,6 +47,7 @@
   }
   .soundCurrentSong {
     @include btn($w: 50px, $h: 50px, $bg: transparent, $fs: 20px, $c: $blue);
+    padding-top: 5px;
   }
   .animationCurrentSong {
     width: 100%;
