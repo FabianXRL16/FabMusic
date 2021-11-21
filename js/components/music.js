@@ -4,7 +4,6 @@ import {
   $albumName,
   $nameSong,
   audios,
-  //   $random,
   $back,
   $play,
   $next,

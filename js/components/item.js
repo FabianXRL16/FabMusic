@@ -1,4 +1,5 @@
 import { audios } from "../utils/const.js";
+// playList.sort(() => Math.random() - 0.5);
 export default function showPlayList(list, action) {
   let $list = document.querySelector(".list");
   list.map((item, index) => {
