@@ -6,6 +6,7 @@ import {
   audios,
   $back,
   $play,
+  $playCurrent,
   $next,
   $repeat,
   playList,
@@ -30,6 +31,7 @@ function mediaPlayer(e) {
     i === e ? audios[i].play() : audios[i].pause();
   }
 }
+$playCurrent.addEventListener("click", () => playSong(audios[currentSong]));
 $play.addEventListener("click", () => playSong(audios[currentSong]));
 $repeat.addEventListener("click", () => repeatSong(audios[currentSong]));
 $back.addEventListener("click", () => backSong());

@@ -10,7 +10,8 @@ let $nameSong = document.querySelector(".nameSong");
 
 let $random = document.querySelector("#random");
 let $back = document.querySelector("#back");
-let $play = document.querySelector("#play");
+let $play = document.querySelector(".play");
+let $playCurrent = document.querySelector(".playCurrent");
 let $next = document.querySelector("#next");
 let $repeat = document.querySelector("#repeat");
 
@@ -170,6 +171,7 @@ export {
   $random,
   $back,
   $play,
+  $playCurrent,
   $next,
   $repeat,
   playList,
