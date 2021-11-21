@@ -1,5 +1,7 @@
 import {
   $album,
+  $singer,
+  $albumName,
   $nameSong,
   audios,
   //   $random,
@@ -19,6 +21,8 @@ export default function listen(i = 0) {
 function toShowCurrentSong(item) {
   $album.style.backgroundImage = `url(${item.album.cover_big})`;
   $nameSong.innerHTML = item.title_short;
+  $singer.innerHTML = item.artist.name;
+  $albumName.innerHTML = item.album.title;
 }
 
 function mediaPlayer(e) {

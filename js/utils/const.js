@@ -1,8 +1,10 @@
 let $input = document.querySelector(".input");
 
 let $album = document.querySelector(".album");
+let $singer = document.querySelector(".singer");
+let $albumName = document.querySelector(".albumName");
 
-let audios = []
+let audios = [];
 
 let $nameSong = document.querySelector(".nameSong");
 
@@ -161,6 +163,8 @@ let playList = [
 export {
   $input,
   $album,
+  $singer,
+  $albumName,
   audios,
   $nameSong,
   $random,
