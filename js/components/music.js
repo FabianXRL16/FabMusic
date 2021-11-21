@@ -3,17 +3,17 @@ import {
   $nameSong,
   audios,
   //   $random,
-  //   $back,
+  $back,
   $play,
-  //   $next,
+  $next,
   $repeat,
   playList,
 } from "../utils/const.js";
-let cunrretSong = 0;
+let currentSong = 0;
 export default function listen(i = 0) {
   toShowCurrentSong(playList[i]);
   mediaPlayer(i);
-  cunrretSong = i;
+  currentSong = i;
 }
 
 function toShowCurrentSong(item) {
@@ -27,11 +27,21 @@ function mediaPlayer(e) {
     i === e ? audios[i].play() : audios[i].pause();
   }
 }
-$play.addEventListener("click", () => playSong(audios[cunrretSong ]));
-$repeat.addEventListener("click", () => repeatSong(audios[cunrretSong ]));
+$play.addEventListener("click", () => playSong(audios[currentSong]));
+$repeat.addEventListener("click", () => repeatSong(audios[currentSong]));
+$back.addEventListener("click", () => backSong());
+$next.addEventListener("click", () => nextSong());
 function playSong(player) {
   player.paused ? player.play() : player.pause();
 }
 function repeatSong(player) {
   player.currentTime = 0;
+}
+function backSong() {
+  currentSong === 0 ? (currentSong = audios.length - 1) : (currentSong -= 1);
+  listen(currentSong);
+}
+function nextSong() {
+  currentSong === audios.length - 1 ? (currentSong = 0) : (currentSong += 1);
+  listen(currentSong);
 }
