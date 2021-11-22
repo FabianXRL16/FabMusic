@@ -10,7 +10,7 @@
   padding: 0 50px 10px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 250px 1fr 50px 50px;
+  grid-template-columns: 150px 1fr 50px 30px;
   place-content: center;
   gap: 10px;
   .snippetCurrentSong {
@@ -24,27 +24,45 @@
     .titleCurrentSong {
       display: grid;
       place-content: center;
-      padding: 6px 0 10px;
+      padding: 3px 0 4px;
       h2 {
         margin: 0;
         font-size: 16px;
         line-height: 20px;
-        width: 190px;
+        width: 90px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
       }
       span {
         font-size: 12px;
-        width: 190px;
+        width: 90px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
       }
     }
   }
-  // .timeCurrentSong {
-  // }
+  .timeCurrentSong {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    span{
+      font-size: 10px;
+    }
+    .bar1{
+      width: 100%;
+      height: 5px;
+      background-color: $white-light;
+      .bar2{
+        background-color: $blue;
+        height: 100%;
+        width: 0%;
+      }
+    }
+  }
   .soundCurrentSong {
     @include btn($w: 50px, $h: 50px, $bg: transparent, $fs: 20px, $c: $blue);
     padding-top: 5px;
@@ -121,9 +139,13 @@
     padding: 0 5% 0;
     bottom: 0;
     right: 0;
-    grid-template-columns: 1fr 50px 50px;
-    gap: 0;
+    grid-template-areas: "snippet btn animation" "bar bar bar";
+    grid-template-columns: 1fr 50px 30px;
+    grid-template-rows: auto 3px;
+    column-gap: 0;
+    row-gap: 5px;
     .snippetCurrentSong {
+      grid-area: snippet;
       .titleCurrentSong {
         width: 100%;
         place-content: initial;
@@ -137,7 +159,20 @@
       }
     }
     .timeCurrentSong {
-      display: none;
+      grid-area: bar;
+      grid-template-columns: 1fr;
+      .bar1{
+        height: 3px;
+      }
+      span{
+        display: none;
+      }
+    }
+    .soundCurrentSong{
+      grid-area: btn;
+    }
+    .animationCurrentSong{
+      grid-area: animation;
     }
   }
 }

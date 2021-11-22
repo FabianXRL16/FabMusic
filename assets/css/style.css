@@ -267,7 +267,7 @@
   padding: 0 50px 10px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 250px 1fr 50px 50px;
+  grid-template-columns: 150px 1fr 50px 30px;
   place-content: center;
   gap: 10px;
 }
@@ -283,23 +283,43 @@
 .currentSong .snippetCurrentSong .titleCurrentSong {
   display: grid;
   place-content: center;
-  padding: 6px 0 10px;
+  padding: 3px 0 4px;
 }
 .currentSong .snippetCurrentSong .titleCurrentSong h2 {
   margin: 0;
   font-size: 16px;
   line-height: 20px;
-  width: 190px;
+  width: 90px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .currentSong .snippetCurrentSong .titleCurrentSong span {
   font-size: 12px;
-  width: 190px;
+  width: 90px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.currentSong .timeCurrentSong {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  place-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.currentSong .timeCurrentSong span {
+  font-size: 10px;
+}
+.currentSong .timeCurrentSong .bar1 {
+  width: 100%;
+  height: 5px;
+  background-color: #808080;
+}
+.currentSong .timeCurrentSong .bar1 .bar2 {
+  background-color: #0d081f;
+  height: 100%;
+  width: 0%;
 }
 .currentSong .soundCurrentSong {
   width: 50px;
@@ -386,8 +406,14 @@
     padding: 0 5% 0;
     bottom: 0;
     right: 0;
-    grid-template-columns: 1fr 50px 50px;
-    gap: 0;
+    grid-template-areas: "snippet btn animation" "bar bar bar";
+    grid-template-columns: 1fr 50px 30px;
+    grid-template-rows: auto 3px;
+    column-gap: 0;
+    row-gap: 5px;
+  }
+  .currentSong .snippetCurrentSong {
+    grid-area: snippet;
   }
   .currentSong .snippetCurrentSong .titleCurrentSong {
     width: 100%;
@@ -401,7 +427,20 @@
     width: 100%;
   }
   .currentSong .timeCurrentSong {
+    grid-area: bar;
+    grid-template-columns: 1fr;
+  }
+  .currentSong .timeCurrentSong .bar1 {
+    height: 3px;
+  }
+  .currentSong .timeCurrentSong span {
     display: none;
+  }
+  .currentSong .soundCurrentSong {
+    grid-area: btn;
+  }
+  .currentSong .animationCurrentSong {
+    grid-area: animation;
   }
 }
 
