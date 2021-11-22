@@ -22,10 +22,40 @@ export default function listen(i = 0, play = true) {
       bars[i].style.animationName = "bars";
     }
   }
+  // btnActive(i);
   currentSong = i;
   changeIconPlay();
   currentSongComponentUpdate(playList[i]);
+  audios[currentSong].ontimeupdate = updateTime;
+} 
+
+function updateTime() {
+  document.querySelector(".currentTime").innerText = `${parseInt(
+    this.currentTime / 60
+  )}:${
+    this.currentTime % 60 < 10
+      ? "0" + parseInt(this.currentTime % 60)
+      : parseInt(this.currentTime % 60)
+  }`;
+  let percentage = (100 * this.currentTime) / this.duration;
+  document.querySelector(".bar2").style.width = `${percentage}%`;
+  if (this.ended) {
+    currentSong += 1;
+  }
 }
+
+// function btnActive(i) {
+//   let items = document.querySelectorAll(".item");
+//   items.forEach((n, index) => {
+//     if (index === i) {
+//       n.style.backgroundColor = "#0d081f";
+//       n.style.color = "#fff";
+//     } else {
+//       n.style.backgroundColor = "";
+//       n.style.color = "t#0d081f";
+//     }
+//   });
+// }
 
 function toShowCurrentSong(item) {
   $album.style.backgroundImage = `url(${item.album.cover_big})`;
@@ -117,7 +147,20 @@ function currentSongComponent(item) {
 
   let $timeCurrentSong = document.createElement("DIV");
   $timeCurrentSong.classList.add("timeCurrentSong");
-  $timeCurrentSong.innerText = "02:46 ----- 4:05";
+  let $currentTime = document.createElement("SPAN");
+  $currentTime.classList.add("currentTime");
+  $currentTime.innerText = "0:00";
+  let $bar1 = document.createElement("DIV");
+  $bar1.classList.add("bar1");
+  let $bar2 = document.createElement("DIV");
+  $bar2.classList.add("bar2");
+  $bar1.appendChild($bar2);
+  let $currentTotal = document.createElement("SPAN");
+  $currentTotal.classList.add("currentTotal");
+  $currentTotal.innerText = "0:00";
+  $timeCurrentSong.appendChild($currentTime);
+  $timeCurrentSong.appendChild($bar1);
+  $timeCurrentSong.appendChild($currentTotal);
 
   let $soundCurrentSong = document.createElement("BUTTON");
   $soundCurrentSong.classList.add("soundCurrentSong");
@@ -156,4 +199,14 @@ function currentSongComponentUpdate(item) {
   nameSingerCurrentSong.innerText = item.artist.name;
   let nameSongCurrentSong = document.querySelector(".nameSongCurrentSong");
   nameSongCurrentSong.innerText = item.title_short;
+  let currentTime = document.querySelector(".currentTime");
+  currentTime.innerText = `${parseInt(audios[currentSong].currentTime / 60)}:${
+    audios[currentSong].currentTime % 60 < 10
+      ? "0" + (audios[currentSong].currentTime % 60)
+      : audios[currentSong].currentTime % 60
+  }`;
+  let currentTotal = document.querySelector(".currentTotal");
+  currentTotal.innerText = `${parseInt(item.duration / 60)}:${
+    item.duration % 60 < 10 ? "0" + (item.duration % 60) : item.duration % 60
+  }`;
 }
