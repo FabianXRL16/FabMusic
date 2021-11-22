@@ -13,8 +13,14 @@ import {
 let currentSong = 0;
 export default function listen(i = 0, play = true) {
   toShowCurrentSong(playList[i]);
-  if(play){
+  if (play) {
     mediaPlayer(i);
+    let bars = document.querySelectorAll(".bar");
+    for (let i = 0; i < 4; i++) {
+      bars[i].style.animationIterationCount = "infinite";
+      bars[i].style.animationDuration = "2s";
+      bars[i].style.animationName = "bars";
+    }
   }
   currentSong = i;
   changeIconPlay();
@@ -51,16 +57,25 @@ function playSong(player) {
 
 function changeIconPlay() {
   let $paused = document.querySelector(".paused");
+  let bars = document.querySelectorAll(".bar");
   if (!audios[currentSong].paused) {
     $idPlay.classList.remove("fa-play");
     $idPlay.classList.add("fa-pause");
     $paused.classList.remove("fa-play");
     $paused.classList.add("fa-pause");
+    for (let i = 0; i < 4; i++) {
+      bars[i].style.animationName = "bars";
+      bars[i].style.animationDuration = "2s";
+      bars[i].style.animationIterationCount = "infinite";
+    }
   } else {
     $idPlay.classList.remove("fa-pause");
     $idPlay.classList.add("fa-play");
     $paused.classList.remove("fa-pause");
     $paused.classList.add("fa-play");
+    for (let i = 0; i < 4; i++) {
+      bars[i].style.animationIterationCount = "0";
+    }
   }
 }
 

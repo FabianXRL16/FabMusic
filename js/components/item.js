@@ -32,7 +32,7 @@ export default function showPlayList(list, action) {
     );
     $duration.appendChild(time);
     $snippet.appendChild($duration);
-    
+
     $item.addEventListener("click", () => action(index));
 
     $item.appendChild($pos);
