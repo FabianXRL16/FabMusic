@@ -1,8 +1,21 @@
-$white: rgb(248, 248, 248);
-$white-dark: #4e4c55;
-$white-light: #808080;
-$gray: #25222d;
-$gray2: #25222dc5;
-$gray-light: rgb(240, 240, 240);
-$blue: #0d081f;
-$blue-light: #201c31;
+// Colors for light mode
+
+  $bg-1-light: #f8f8f8;
+  $bg-2-light: #f0f0f0;
+  $bg-3-light: #777777;
+  $bg-4-light: #111111;
+  
+  $title-text-light: #111111;
+  $sub-text-light: #353535;
+  $text-light: rgb(82, 82, 82);
+
+// Colors for dark mode
+
+  $bg-1-dark: #111111;
+  $bg-2-dark: #181818;
+  $bg-3-dark: #2e2e2e;
+  $bg-4-dark: #414141;
+
+  $title-text-dark: rgb(185, 185, 185);
+  $sub-text-dark: #a5a5a5;
+  $text-dark: rgb(105, 105, 105);

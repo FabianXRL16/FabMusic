@@ -26,14 +26,16 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        color: var(--title);
       }
       .infoSong {
         margin: 0;
         font-size: 12px;
         font-weight: 500;
-        line-height: 12px;
+        line-height: 12px; 
+        color: var(--subtitle);
         .albumName{
-          color: $white-dark;
+          color: var(--text);
           font-size: 10px;
         }
       }
@@ -49,18 +51,20 @@
         font-size: 25px;
         line-height: 25px;
         margin: 0;
+        color: var(--title);
         .max {
           font-size: 12px;
           line-height: 12px;
         }
       }
-      span {
+      .points {
         @media (max-width: 820px) {
           display: none;
         }
       }
       .settings {
         display: none;
+        color: var(--title);
         @media (max-width: 820px) {
           display: flex;
           justify-content: flex-end;
@@ -90,11 +94,11 @@
       gap: 10px;
       padding: 16px 10px;
       font-weight: 700;
-      color: $gray;
+      color: var(--title);
       &:hover {
-        background-color: $blue;
+        background-color: var(--bg-4);
         transition: 0.2s;
-        color: $white;
+        color: var(--bg-1);
       }
       .pos {
         width: 20px;

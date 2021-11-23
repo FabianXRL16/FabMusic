@@ -20,10 +20,22 @@
     padding: 0;
     width: 90%;
   }
-  .logo {
+  .logo, .logo-dark {
     height: 40px;
   }
+  .logo-dark{
+    display: none;
+  }
+  @media (prefers-color-scheme: dark){
+    .logo{
+      display: none;
+    }
+    .logo-dark{
+      display: block;
+    }
+  }
   .settings {
+    color: var(--title);
     @media (max-width: 820px) {
       display: none;
     }
@@ -36,6 +48,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 3px solid $blue-light;
+    border: 3px solid var(--title);
   }
 }
