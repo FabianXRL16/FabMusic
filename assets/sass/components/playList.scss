@@ -95,14 +95,14 @@
       padding: 16px 10px;
       font-weight: 700;
       color: var(--title);
-      &:hover {
-        background-color: var(--bg-4);
-        transition: 0.2s;
-        color: var(--bg-1);
-      }
       .pos {
         width: 20px;
         text-align: left;
+      }
+      .playItem{
+        display: none;
+        font-size: 9px;
+        width: 20px;
       }
       .name {
         width: 100%;

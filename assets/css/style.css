@@ -159,14 +159,14 @@
   font-weight: 700;
   color: var(--title);
 }
-.playList .list .item:hover {
-  background-color: var(--bg-4);
-  transition: 0.2s;
-  color: var(--bg-1);
-}
 .playList .list .item .pos {
   width: 20px;
   text-align: left;
+}
+.playList .list .item .playItem {
+  display: none;
+  font-size: 9px;
+  width: 20px;
 }
 .playList .list .item .name {
   width: 100%;
