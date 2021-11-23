@@ -4,6 +4,9 @@ export default function showPlayList(list, action) {
   let $list = document.querySelector(".list");
   list.map((item, index) => {
     audios[index] = new Audio(item.preview);
+    audios[index].onend = () => {
+      action(index + 1);
+    };
 
     let $item = document.createElement("BUTTON");
     $item.classList.add("item");
@@ -12,6 +15,10 @@ export default function showPlayList(list, action) {
     let $pos = document.createElement("DIV");
     $pos.classList.add("pos");
     let numPos = document.createTextNode(index + 1);
+    let $icon = document.createElement("I");
+    $icon.classList.add("playItem");
+    $icon.classList.add("fas");
+    $icon.classList.add("fa-play");
     $pos.appendChild(numPos);
 
     let $name = document.createElement("DIV");
@@ -35,6 +42,7 @@ export default function showPlayList(list, action) {
 
     $item.addEventListener("click", () => action(index));
 
+    $item.appendChild($icon);
     $item.appendChild($pos);
     $item.appendChild($name);
     $item.appendChild($snippet);
