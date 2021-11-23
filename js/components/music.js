@@ -27,7 +27,8 @@ export default function listen(i = 0, play = true) {
   changeIconPlay();
   currentSongComponentUpdate(playList[i]);
   audios[currentSong].ontimeupdate = updateTime;
-} 
+  document.querySelector(".bar1").addEventListener("click", changeTime);
+}
 
 function updateTime() {
   document.querySelector(".currentTime").innerText = `${parseInt(
@@ -42,6 +43,14 @@ function updateTime() {
   if (this.ended) {
     currentSong += 1;
   }
+}
+
+function changeTime(e) {
+  let locationCLick = e.offsetX;
+  let widthTotal = this.offsetWidth;
+  let percentage = (100 * locationCLick) / widthTotal;
+  let pos = Math.floor(audios[currentSong].duration * (percentage / 100));
+  audios[currentSong].currentTime = pos;
 }
 
 // function btnActive(i) {

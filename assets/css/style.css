@@ -313,6 +313,7 @@
   width: 100%;
   height: 5px;
   background-color: var(--bg-3);
+  cursor: pointer;
 }
 .currentSong .timeCurrentSong .bar1 .bar2 {
   background-color: var(--title);
@@ -469,7 +470,7 @@
 html {
   --bg-1: #f8f8f8;
   --bg-2: #f0f0f0;
-  --bg-3: #777777;
+  --bg-3: #afafaf;
   --bg-4: #111111;
   --title: #111111;
   --subtitle: #353535;
