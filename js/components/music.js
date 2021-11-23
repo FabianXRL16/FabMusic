@@ -22,12 +22,33 @@ export default function listen(i = 0, play = true) {
       bars[i].style.animationName = "bars";
     }
   }
-  // btnActive(i);
   currentSong = i;
   changeIconPlay();
   currentSongComponentUpdate(playList[i]);
   audios[currentSong].ontimeupdate = updateTime;
   document.querySelector(".bar1").addEventListener("click", changeTime);
+  changeIconItem(currentSong);
+}
+
+function changeIconItem(currentSong) {
+  let items = document.querySelectorAll(".item");
+  let pos = document.querySelectorAll(".pos");
+  let icons = document.querySelectorAll(".playItem");
+  for (let i = 0; i < playList.length; i++) {
+    if (currentSong === i) {
+      items[i].focus
+      items[i].style.backgroundColor = "var(--bg-4)";
+      items[i].style.color = "var(--bg-1)";
+      items[i].style.border = "none";
+      pos[i].style.display = "none";
+      icons[i].style.display = "block";
+    } else {
+      items[i].style.backgroundColor = "transparent";
+      items[i].style.color = "var(--title)";
+      pos[i].style.display = "block";
+      icons[i].style.display = "none";
+    }
+  }
 }
 
 function updateTime() {
@@ -52,19 +73,6 @@ function changeTime(e) {
   let pos = Math.floor(audios[currentSong].duration * (percentage / 100));
   audios[currentSong].currentTime = pos;
 }
-
-// function btnActive(i) {
-//   let items = document.querySelectorAll(".item");
-//   items.forEach((n, index) => {
-//     if (index === i) {
-//       n.style.backgroundColor = "#0d081f";
-//       n.style.color = "#fff";
-//     } else {
-//       n.style.backgroundColor = "";
-//       n.style.color = "t#0d081f";
-//     }
-//   });
-// }
 
 function toShowCurrentSong(item) {
   $album.style.backgroundImage = `url(${item.album.cover_big})`;
