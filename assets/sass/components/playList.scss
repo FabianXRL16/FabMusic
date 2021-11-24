@@ -32,9 +32,9 @@
         margin: 0;
         font-size: 12px;
         font-weight: 500;
-        line-height: 12px; 
+        line-height: 12px;
         color: var(--subtitle);
-        .albumName{
+        .albumName {
           color: var(--text);
           font-size: 10px;
         }
@@ -84,6 +84,7 @@
     &::-webkit-scrollbar {
       width: 0;
     }
+
     .item {
       height: auto;
       width: 100%;
@@ -95,11 +96,15 @@
       padding: 16px 10px;
       font-weight: 700;
       color: var(--title);
+      &:hover {
+        background-color: var(--title);
+        color: var(--bg-1);
+      }
       .pos {
         width: 20px;
         text-align: left;
       }
-      .playItem{
+      .playItem {
         display: none;
         font-size: 9px;
         width: 20px;
@@ -115,6 +120,10 @@
         width: 50px;
         text-align: right;
       }
+    }
+    .active {
+      background-color: var(--title);
+      color: var(--bg-1);
     }
   }
   @media (max-width: 460px) {

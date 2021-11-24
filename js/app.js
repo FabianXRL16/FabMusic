@@ -15,11 +15,26 @@ document.querySelector("#random").addEventListener("click", function () {
   console.log(newPlayList);
 });
 
-// import search from "./api.js";
+// let colorScheme = matchMedia("(prefers-color-scheme: dark)").matches;
+// let body = document.querySelector("body");
 
-// $input.addEventListener("keyup", (e) => {
-//   if (e.keyCode === 13) {
-//     search($input.value);
-//     $input.value = "";
+// function themeDefault() {
+//   if (colorScheme.matches) {
+//     body.classList.add("dark");
+//   } else {
+//     body.classList.add("light");
 //   }
+// }
+
+// themeDefault();
+
+// document.querySelector("#changeTheme").addEventListener("click", function () {
+//   if (colorScheme) {
+//     body.classList.remove("dark");
+//     body.classList.add("light");
+//   } else {
+//     body.classList.remove("light");
+//     body.classList.add("dark");
+//   }
+//   colorScheme = !colorScheme;
 // });
