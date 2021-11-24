@@ -5,12 +5,17 @@ import {
   $nameSong,
   audios,
   $back,
+  $random,
   $play,
   $next,
   $repeat,
   playList,
 } from "../utils/const.js";
-let currentSong = 0;
+
+import song from "./item.js";
+
+let currentSong = 0
+
 export default function listen(i = 0, play = true) {
   toShowCurrentSong(playList[i]);
   if (play) {
@@ -29,6 +34,22 @@ export default function listen(i = 0, play = true) {
   document.querySelector(".bar1").addEventListener("click", changeTime);
   changeIconItem(currentSong);
 }
+
+$random.addEventListener("click", function () {
+  let padre = document.querySelector(".list");
+  let item = document.querySelectorAll(".item");
+  item.forEach((i) => padre.removeChild(i));
+
+  let currentItem = playList[currentSong];
+
+  playList.splice(currentSong, 1);
+
+  let newList = playList.sort(() => Math.random() - 0.5);
+
+  newList.unshift(currentItem);
+
+  song(newList, listen);
+});
 
 function changeIconItem(currentSong) {
   let items = document.querySelectorAll(".item");
