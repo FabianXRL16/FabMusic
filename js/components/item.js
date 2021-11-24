@@ -4,9 +4,9 @@ export default function showPlayList(list, action) {
   let $list = document.querySelector(".list");
   list.map((item, index) => {
     audios[index] = new Audio(item.preview);
-    audios[index].onend = () => {
-      action(index + 1);
-    };
+    audios[index].addEventListener("ended", () => {
+      action(index === audios.length - 1 ? 0 : index + 1);
+    });
 
     let $item = document.createElement("BUTTON");
     $item.classList.add("item");
