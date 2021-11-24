@@ -36,15 +36,11 @@ function changeIconItem(currentSong) {
   let icons = document.querySelectorAll(".playItem");
   for (let i = 0; i < playList.length; i++) {
     if (currentSong === i) {
-      items[i].focus
-      items[i].style.backgroundColor = "var(--bg-4)";
-      items[i].style.color = "var(--bg-1)";
-      items[i].style.border = "none";
+      items[i].classList.add("active");
       pos[i].style.display = "none";
       icons[i].style.display = "block";
     } else {
-      items[i].style.backgroundColor = "transparent";
-      items[i].style.color = "var(--title)";
+      items[i].classList.remove("active");
       pos[i].style.display = "block";
       icons[i].style.display = "none";
     }
