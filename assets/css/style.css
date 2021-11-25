@@ -208,7 +208,7 @@
   padding: 0 50px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr 30px 36px;
+  grid-template-columns: 1fr 100px;
   place-content: center;
   align-items: center;
 }
@@ -235,22 +235,27 @@
     display: block;
   }
 }
-.header .settings {
+.header .containerControlHeader {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.header .containerControlHeader .settings {
   color: var(--title);
   font-size: 16px;
 }
-.header .settings .iconDark {
+.header .containerControlHeader .settings .iconDark {
   display: none;
 }
 @media (prefers-color-scheme: dark) {
-  .header .settings .iconLight {
+  .header .containerControlHeader .settings .iconLight {
     display: none;
   }
-  .header .settings .iconDark {
+  .header .containerControlHeader .settings .iconDark {
     display: block;
   }
 }
-.header .dev {
+.header .containerControlHeader .dev {
   width: 36px;
   border-radius: 50%;
   height: 36px;
