@@ -1,6 +1,7 @@
 @import "../utils/vars.scss";
 
 .music {
+  transition: .3s ease all;
   width: 270px;
   height: 330px;
   border-radius: 20px;
