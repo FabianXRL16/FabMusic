@@ -26,15 +26,23 @@
       display: grid;
       place-content: center;
       padding: 3px 0 4px;
-      h2 {
-        margin: 0;
-        font-size: 16px;
-        line-height: 20px;
-        width: 90px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+      .titleContainer{
         overflow: hidden;
-        color: var(--title);
+        display: flex;
+        .animationH2{
+          animation: titleMove 10s linear 2s infinite;
+        }
+        .secondText{
+          opacity: 0;
+        }
+        h2 {
+          margin: 0 50px 0 0;
+          font-size: 16px;
+          line-height: 20px;
+          width: auto;
+          white-space: nowrap;
+          color: var(--title);
+        }
       }
       span {
         font-size: 12px;
@@ -154,9 +162,6 @@
       .titleCurrentSong {
         width: 100%;
         place-content: initial;
-        h2 {
-          width: 100%;
-        }
         span {
           font-size: 12px;
           width: 100%;
@@ -179,5 +184,14 @@
     .animationCurrentSong{
       grid-area: animation;
     }
+  }
+}
+
+@keyframes titleMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 50px));
   }
 }
