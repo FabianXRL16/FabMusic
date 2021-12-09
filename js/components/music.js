@@ -232,9 +232,9 @@ function currentSongComponentUpdate(item) {
   let singerCurrentSong = document.querySelector(".singerCurrentSong");
   singerCurrentSong.src = item.imgSinger;
   let nameSingerCurrentSong = document.querySelector(".nameSingerCurrentSong");
-  nameSingerCurrentSong.innerText = item.singer;
+  nameSingerCurrentSong.innerText = item.title;
   let nameSongCurrentSong = document.querySelector(".nameSongCurrentSong");
-  nameSongCurrentSong.innerText = item.title;
+  nameSongCurrentSong.innerText = item.singer;
   let currentTime = document.querySelector(".currentTime");
   currentTime.innerText = `${parseInt(audios[currentSong].currentTime / 60)}:${
     audios[currentSong].currentTime % 60 < 10
