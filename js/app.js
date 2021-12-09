@@ -1,10 +1,16 @@
-import { playList } from "./utils/const.js";
-
 import song from "./components/item.js";
 import listenMusic from "./components/music.js";
 
-song(playList, listenMusic);
-listenMusic(0, false);
+
+import getSongs from "./getSongs.js";
+import { playList } from "./utils/const.js";
+
+await getSongs();
+
+if(playList.length > 0){
+  song(playList, listenMusic);
+  listenMusic(0, false);
+}
 
 let colorScheme = matchMedia("(prefers-color-scheme: dark)").matches;
 
@@ -23,8 +29,8 @@ document.querySelector("#changeTheme").addEventListener("click", function () {
     newStyle.setProperty("--shadow", "rgba(149, 157, 165, 0.377)");
     logo.forEach((n) => (n.src = "./assets/images/logo.svg"));
     icon.forEach((n) => {
-        n.classList.remove("fa-moon");
-        n.classList.add("fa-sun");
+      n.classList.remove("fa-moon");
+      n.classList.add("fa-sun");
     });
   } else {
     newStyle.setProperty("--bg-1", "#111111");
@@ -37,7 +43,7 @@ document.querySelector("#changeTheme").addEventListener("click", function () {
     newStyle.setProperty("--shadow", "rgba(0, 0, 0, 0.849)");
     logo.forEach((n) => (n.src = "./assets/images/logo-dark.svg"));
     icon.forEach((n) => {
-        n.classList.remove("fa-sun");
+      n.classList.remove("fa-sun");
       n.classList.add("fa-moon");
     });
   }
