@@ -2,7 +2,7 @@ import { audios } from "../utils/const.js";
 export default function showPlayList(list, action) {
   let $list = document.querySelector(".list");
   list.map((item, index) => {
-    audios[index] = new Audio(item.preview);
+    audios[index] = new Audio(item.audio);
     audios[index].addEventListener("ended", () => {
       action(index === audios.length - 1 ? 0 : index + 1);
     });
@@ -22,7 +22,7 @@ export default function showPlayList(list, action) {
 
     let $name = document.createElement("DIV");
     $name.classList.add("name");
-    let nameSong = document.createTextNode(item.title_short);
+    let nameSong = document.createTextNode(item.title);
     $name.appendChild(nameSong);
 
     let $snippet = document.createElement("DIV");
