@@ -15,7 +15,7 @@ import {
 import song from "./item.js";
 
 import getSongs from "../getSongs.js";
-await getSongs()
+await getSongs();
 
 let currentSong = 0;
 export default async function listen(i = 0, play = true) {
@@ -170,13 +170,21 @@ function currentSongComponent(item) {
   $singerCurrentSong.src = item.imgSinger;
   let $titleCurrentSong = document.createElement("DIV");
   $titleCurrentSong.classList.add("titleCurrentSong");
+  let $titleContainer = document.createElement("DIV");
+  $titleContainer.classList.add("titleContainer");
   let $h2 = document.createElement("H2");
+  let $h2_ = document.createElement("H2");
   $h2.classList.add("nameSingerCurrentSong");
-  $h2.innerText = item.singer;
+  $h2_.classList.add("nameSingerCurrentSong");
+  $h2_.classList.add("secondText");
+  $h2.innerText = item.title;
+  $h2_.innerText = item.title;
   let $span = document.createElement("SPAN");
   $span.classList.add("nameSongCurrentSong");
-  $span.innerText = item.title_short;
-  $titleCurrentSong.appendChild($h2);
+  $span.innerText = item.singer;
+  $titleContainer.appendChild($h2);
+  $titleContainer.appendChild($h2_);
+  $titleCurrentSong.appendChild($titleContainer);
   $titleCurrentSong.appendChild($span);
   $snippetCurrentSong.appendChild($singerCurrentSong);
   $snippetCurrentSong.appendChild($titleCurrentSong);
@@ -231,8 +239,21 @@ function currentSongComponent(item) {
 function currentSongComponentUpdate(item) {
   let singerCurrentSong = document.querySelector(".singerCurrentSong");
   singerCurrentSong.src = item.imgSinger;
-  let nameSingerCurrentSong = document.querySelector(".nameSingerCurrentSong");
-  nameSingerCurrentSong.innerText = item.title;
+  let nameSingerCurrentSong = document.querySelectorAll(
+    ".nameSingerCurrentSong"
+  );
+  let secondText = document.querySelector(".secondText")
+  nameSingerCurrentSong.forEach((e) => {
+    e.innerText = item.title;
+    if (item.title.length >= 10){
+      e.classList.add("animationH2");
+      secondText.style.opacity = "1"
+    }
+    else {
+      e.classList.remove("animationH2")
+      secondText.style.opacity = "0"
+    }
+  });
   let nameSongCurrentSong = document.querySelector(".nameSongCurrentSong");
   nameSongCurrentSong.innerText = item.singer;
   let currentTime = document.querySelector(".currentTime");
