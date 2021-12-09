@@ -14,9 +14,11 @@ import {
 
 import song from "./item.js";
 
-let currentSong = 0
+import getSongs from "../getSongs.js";
+await getSongs()
 
-export default function listen(i = 0, play = true) {
+let currentSong = 0;
+export default async function listen(i = 0, play = true) {
   toShowCurrentSong(playList[i]);
   if (play) {
     mediaPlayer(i);
@@ -92,10 +94,10 @@ function changeTime(e) {
 }
 
 function toShowCurrentSong(item) {
-  $album.style.backgroundImage = `url(${item.album.cover_big})`;
-  $nameSong.innerHTML = item.title_short;
-  $singer.innerHTML = item.artist.name;
-  $albumName.innerHTML = item.album.title;
+  $album.style.backgroundImage = `url(${item.imgAlbum})`;
+  $nameSong.innerHTML = item.title;
+  $singer.innerHTML = item.singer;
+  $albumName.innerHTML = item.album;
 }
 
 function mediaPlayer(e) {
@@ -165,12 +167,12 @@ function currentSongComponent(item) {
   $snippetCurrentSong.classList.add("snippetCurrentSong");
   let $singerCurrentSong = document.createElement("IMG");
   $singerCurrentSong.classList.add("singerCurrentSong");
-  $singerCurrentSong.src = item.artist.picture_medium;
+  $singerCurrentSong.src = item.imgSinger;
   let $titleCurrentSong = document.createElement("DIV");
   $titleCurrentSong.classList.add("titleCurrentSong");
   let $h2 = document.createElement("H2");
   $h2.classList.add("nameSingerCurrentSong");
-  $h2.innerText = item.artist.name;
+  $h2.innerText = item.singer;
   let $span = document.createElement("SPAN");
   $span.classList.add("nameSongCurrentSong");
   $span.innerText = item.title_short;
@@ -228,11 +230,11 @@ function currentSongComponent(item) {
 
 function currentSongComponentUpdate(item) {
   let singerCurrentSong = document.querySelector(".singerCurrentSong");
-  singerCurrentSong.src = item.artist.picture_medium;
+  singerCurrentSong.src = item.imgSinger;
   let nameSingerCurrentSong = document.querySelector(".nameSingerCurrentSong");
-  nameSingerCurrentSong.innerText = item.artist.name;
+  nameSingerCurrentSong.innerText = item.singer;
   let nameSongCurrentSong = document.querySelector(".nameSongCurrentSong");
-  nameSongCurrentSong.innerText = item.title_short;
+  nameSongCurrentSong.innerText = item.title;
   let currentTime = document.querySelector(".currentTime");
   currentTime.innerText = `${parseInt(audios[currentSong].currentTime / 60)}:${
     audios[currentSong].currentTime % 60 < 10
