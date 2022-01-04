@@ -1,14 +1,47 @@
 let playList = [
   {
-    album: "RISE",
-    audio: "https://demo-fxrl16.s3.amazonaws.com/LOL-Rise.mp3",
-    duration: 193,
+    album: "Donde Vamos a Parar",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/RIO-TodoEstabaBien.mp3",
+    duration: 287,
     imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/4349e2eedfe96be5c76b5ad7fa13727f/500x500-000000-80-0-0.jpg",
+      "https://e-cdns-images.dzcdn.net/images/cover/275849fe117e4608c052244b42ae4b71/500x500-000000-80-0-0.jpg",
     imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/21e53b8e8285f84f60601d895c39c900/250x250-000000-80-0-0.jpg",
-    singer: "League of legends, The Glitch Mob",
-    title: "RISE",
+      "https://e-cdns-images.dzcdn.net/images/artist/a9707ea80e5a8a903e1b4f87decf75ad/250x250-000000-80-0-0.jpg",
+    singer: "Rio",
+    title: "Todo Estaba Bien",
+  },
+  {
+    album: "Libre",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/AMEN-TeQuiero.mp3",
+    duration: 251,
+    imgAlbum:
+      "https://e-cdns-images.dzcdn.net/images/cover/a6d4d2a108433612c5311a229973c1a2/500x500-000000-80-0-0.jpg",
+    imgSinger:
+      "https://e-cdns-images.dzcdn.net/images/artist/66481c198e130c9e94a109334df01e0d/250x250-000000-80-0-0.jpg",
+    singer: "Amén",
+    title: "Te Quiero",
+  },
+  {
+    album: "Sueños",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/AUTOCONTROL-fantasy.mp3",
+    duration: 287,
+    imgAlbum:
+      "https://e-cdns-images.dzcdn.net/images/cover/01f906e99de2b16f2b725228ecffe6c8/500x500-000000-80-0-0.jpg",
+    imgSinger:
+      "https://e-cdns-images.dzcdn.net/images/artist/01f906e99de2b16f2b725228ecffe6c8/250x250-000000-80-0-0.jpg",
+    singer: "Autocontrol",
+    title: "Fantasy",
+  },
+  {
+    album: "Infectado",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/AMEN-LaChata.mp3",
+    duration: 194,
+    imgAlbum:
+      "https://e-cdns-images.dzcdn.net/images/cover/9b99e2d4393aa202d25f7773091594c2/500x500-000000-80-0-0.jpg",
+    imgSinger:
+      "https://e-cdns-images.dzcdn.net/images/artist/66481c198e130c9e94a109334df01e0d/250x250-000000-80-0-0.jpg",
+    singer: "Amen",
+    title: "La Chata",
   },
   {
     album: "Smoke + Mirrors (Deluxe)",
@@ -48,25 +81,13 @@ let playList = [
     album: "Lo Que Andábamos Buscando (Special Para CEV)",
     audio:
       "https://demo-fxrl16.s3.amazonaws.com/ELEFANTE-DeLaNocheALaMa%C3%B1ana.mp3",
-    duration: 271,
+    duration: 266,
     imgAlbum:
       "https://e-cdns-images.dzcdn.net/images/cover/e0e142e106bb9800db352cf1aab6ee48/500x500-000000-80-0-0.jpg",
     imgSinger:
       "https://e-cdns-images.dzcdn.net/images/artist/11ab5eec566184ae1c339ad70b37fe0a/250x250-000000-80-0-0.jpg",
     singer: "Elefante",
     title: "De la Noche a la Mañana",
-  },
-  {
-    album: "Don't You Wanna Know",
-    audio:
-      "https://demo-fxrl16.s3.amazonaws.com/NOAH_SCHNACKY-DontYouWannaKnow.mp3",
-    duration: 211,
-    imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/8704ecbc306bad4bafeca9d042f5c8e8/500x500-000000-80-0-0.jpg",
-    imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/c6e682dda9f3d0836d6dc64a2eae28a5/250x250-000000-80-0-0.jpg",
-    singer: "Noah Schnacky, Jimmie Allen",
-    title: "Dont You Wanna Know",
   },
   {
     album: "Future Nostalgia",
