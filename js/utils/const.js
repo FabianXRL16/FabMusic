@@ -11,28 +11,6 @@ let playList = [
     title: "Todo Estaba Bien",
   },
   {
-    album: "Libre",
-    audio: "https://demo-fxrl16.s3.amazonaws.com/AMEN-TeQuiero.mp3",
-    duration: 251,
-    imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/a6d4d2a108433612c5311a229973c1a2/500x500-000000-80-0-0.jpg",
-    imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/66481c198e130c9e94a109334df01e0d/250x250-000000-80-0-0.jpg",
-    singer: "Amén",
-    title: "Te Quiero",
-  },
-  {
-    album: "Sueños",
-    audio: "https://demo-fxrl16.s3.amazonaws.com/AUTOCONTROL-fantasy.mp3",
-    duration: 287,
-    imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/01f906e99de2b16f2b725228ecffe6c8/500x500-000000-80-0-0.jpg",
-    imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/01f906e99de2b16f2b725228ecffe6c8/250x250-000000-80-0-0.jpg",
-    singer: "Autocontrol",
-    title: "Fantasy",
-  },
-  {
     album: "Infectado",
     audio: "https://demo-fxrl16.s3.amazonaws.com/AMEN-LaChata.mp3",
     duration: 194,
@@ -99,6 +77,28 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/e6a04d735093a46dcc8be197681d1199/250x250-000000-80-0-0.jpg",
     singer: "Dua Lipa",
     title: "Break My Heart",
+  },
+  {
+    album: "Libre",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/AMEN-TeQuiero.mp3",
+    duration: 251,
+    imgAlbum:
+      "https://e-cdns-images.dzcdn.net/images/cover/a6d4d2a108433612c5311a229973c1a2/500x500-000000-80-0-0.jpg",
+    imgSinger:
+      "https://e-cdns-images.dzcdn.net/images/artist/66481c198e130c9e94a109334df01e0d/250x250-000000-80-0-0.jpg",
+    singer: "Amén",
+    title: "Te Quiero",
+  },
+  {
+    album: "Sueños",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/AUTOCONTROL-fantasy.mp3",
+    duration: 287,
+    imgAlbum:
+      "https://e-cdns-images.dzcdn.net/images/cover/01f906e99de2b16f2b725228ecffe6c8/500x500-000000-80-0-0.jpg",
+    imgSinger:
+      "https://e-cdns-images.dzcdn.net/images/artist/01f906e99de2b16f2b725228ecffe6c8/250x250-000000-80-0-0.jpg",
+    singer: "Autocontrol",
+    title: "Fantasy",
   },
   {
     album: "Lazarus",
