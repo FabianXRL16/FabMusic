@@ -22,7 +22,7 @@ document.querySelector("#changeTheme").addEventListener("click", function () {
   let icon = document.querySelectorAll(".iconTheme");
   if (colorScheme) {
     newStyle.setProperty("--bg-1", "#f8f8f8");
-    newStyle.setProperty("--bg-2", "#f0f0f0");
+    newStyle.setProperty("--bg-2", "#EAEAEA");
     newStyle.setProperty("--bg-3", "#afafaf");
     newStyle.setProperty("--bg-4", "#111111");
     newStyle.setProperty("--title", "#111111");

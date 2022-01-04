@@ -496,7 +496,7 @@
 
 html {
   --bg-1: #f8f8f8;
-  --bg-2: #f0f0f0;
+  --bg-2: #EAEAEA;
   --bg-3: #afafaf;
   --bg-4: #111111;
   --title: #111111;
@@ -527,7 +527,7 @@ html {
     --shadow: rgba(0, 0, 0, 0.849);
     --white: #fff;
     --bg-1-light: #f8f8f8;
-    --bg-2-light: #f0f0f0;
+    --bg-2-light: #EAEAEA;
     --bg-3-light: #afafaf;
     --bg-4-light: #111111;
     --title-light: #111111;
