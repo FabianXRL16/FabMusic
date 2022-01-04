@@ -1,6 +1,6 @@
 import {
   $album,
-  $singer,
+  $singer,  
   $albumName,
   $nameSong,
   audios,
@@ -14,8 +14,8 @@ import {
 
 import song from "./item.js";
 
-import getSongs from "../getSongs.js";
-await getSongs();
+// import getSongs from "../getSongs.js";
+// await getSongs();
 
 let currentSong = 0;
 export default async function listen(i = 0, play = true) {
@@ -242,16 +242,15 @@ function currentSongComponentUpdate(item) {
   let nameSingerCurrentSong = document.querySelectorAll(
     ".nameSingerCurrentSong"
   );
-  let secondText = document.querySelector(".secondText")
+  let secondText = document.querySelector(".secondText");
   nameSingerCurrentSong.forEach((e) => {
     e.innerText = item.title;
-    if (item.title.length >= 10){
+    if (item.title.length >= 10) {
       e.classList.add("animationH2");
-      secondText.style.opacity = "1"
-    }
-    else {
-      e.classList.remove("animationH2")
-      secondText.style.opacity = "0"
+      secondText.style.opacity = "1";
+    } else {
+      e.classList.remove("animationH2");
+      secondText.style.opacity = "0";
     }
   });
   let nameSongCurrentSong = document.querySelector(".nameSongCurrentSong");

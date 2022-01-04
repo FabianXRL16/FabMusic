@@ -1,16 +1,18 @@
 import song from "./components/item.js";
 import listenMusic from "./components/music.js";
 
-
-import getSongs from "./getSongs.js";
+// import getSongs from "./getSongs.js";
 import { playList } from "./utils/const.js";
 
-await getSongs();
+// await getSongs();
 
-if(playList.length > 0){
-  song(playList, listenMusic);
-  listenMusic(0, false);
-}
+// if(playList.length > 0){
+//   song(playList, listenMusic);
+//   listenMusic(0, false);
+// }
+
+song(playList, listenMusic);
+listenMusic(0, false);
 
 let colorScheme = matchMedia("(prefers-color-scheme: dark)").matches;
 
