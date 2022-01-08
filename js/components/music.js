@@ -1,6 +1,6 @@
 import {
   $album,
-  $singer,  
+  $singer,
   $albumName,
   $nameSong,
   audios,
@@ -13,6 +13,8 @@ import {
 } from "../utils/const.js";
 
 import song from "./item.js";
+
+let backMusic = "";
 
 // import getSongs from "../getSongs.js";
 // await getSongs();
@@ -44,13 +46,20 @@ $random.addEventListener("click", function () {
 
   let currentItem = playList[currentSong];
 
+  backMusic = audios[currentSong];
+
   playList.splice(currentSong, 1);
 
   let newList = playList.sort(() => Math.random() - 0.5);
 
   newList.unshift(currentItem);
+  currentSong = 0;
 
   song(newList, listen);
+
+  changeIconItem(0);
+  mediaPlayer(currentSong);
+  changeIconPlay();
 });
 
 function changeIconItem(currentSong) {
@@ -103,7 +112,12 @@ function toShowCurrentSong(item) {
 function mediaPlayer(e) {
   for (let i = 0; i < audios.length; i++) {
     audios[i].currentTime = 0;
-    i === e ? audios[i].play() : audios[i].pause();
+    if (i === e) {
+      audios[i].play();
+      if (backMusic) backMusic.pause();
+    } else {
+      audios[i].pause();
+    }
   }
 }
 
