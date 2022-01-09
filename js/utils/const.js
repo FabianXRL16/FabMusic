@@ -67,17 +67,6 @@ let playList = [
     title: "Todo Estaba Bien",
   },
   {
-    album: "Butter",
-    audio: "https://demo-fxrl16.s3.amazonaws.com/BTS+-Butter.mp3",
-    duration: 165,
-    imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/0cc1c0ada6f9aab8128e7d8a7d61aec2/500x500-000000-80-0-0.jpg",
-    imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/f7cbf03e5b0963a68f51c68f20c919cb/250x250-000000-80-0-0.jpg",
-    singer: "BTS",
-    title: "Butter",
-  },
-  {
     album: "Lo Que Andábamos Buscando (Special Para CEV)",
     audio:
       "https://demo-fxrl16.s3.amazonaws.com/ELEFANTE-DeLaNocheALaMa%C3%B1ana.mp3",
@@ -177,6 +166,17 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/90fab088c4d091618e7386f688803673/250x250-000000-80-0-0.jpg",
     singer: "JAY-Z, Alicia Keys",
     title: "Empire State Of Mind",
+  },
+  {
+    album: "Butter",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/BTS+-Butter.mp3",
+    duration: 165,
+    imgAlbum:
+      "https://e-cdns-images.dzcdn.net/images/cover/0cc1c0ada6f9aab8128e7d8a7d61aec2/500x500-000000-80-0-0.jpg",
+    imgSinger:
+      "https://e-cdns-images.dzcdn.net/images/artist/f7cbf03e5b0963a68f51c68f20c919cb/250x250-000000-80-0-0.jpg",
+    singer: "BTS",
+    title: "Butter",
   },
 ];
 
