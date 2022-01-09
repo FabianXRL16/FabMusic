@@ -2,7 +2,7 @@ import song from "./components/item.js";
 import listenMusic from "./components/music.js";
 
 // import getSongs from "./getSongs.js";
-import { playList } from "./utils/const.js";
+import { playList, $socialNetwork } from "./utils/const.js";
 
 // await getSongs();
 
@@ -50,4 +50,12 @@ document.querySelector("#changeTheme").addEventListener("click", function () {
     });
   }
   colorScheme = !colorScheme;
+});
+
+let socialN = false;
+document.querySelector(".dev").addEventListener("click", function () {
+  socialN = !socialN;
+  socialN
+    ? ($socialNetwork.style.transform = "scaleY(1)")
+    : ($socialNetwork.style.transform = "scaleY(0)");
 });

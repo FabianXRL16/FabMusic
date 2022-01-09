@@ -203,6 +203,8 @@ let $singer = document.querySelector(".singer");
 let $albumName = document.querySelector(".albumName");
 let $point = document.querySelector(".point");
 
+let $socialNetwork = document.querySelector(".socialNetwork");
+
 let audios = [];
 
 let $nameSong = document.querySelector(".nameSong");
@@ -219,6 +221,7 @@ export {
   $singer,
   $albumName,
   $point,
+  $socialNetwork,
   audios,
   $nameSong,
   $random,
