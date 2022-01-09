@@ -11,26 +11,26 @@ let playList = [
     title: "Todo Estaba Bien",
   },
   {
-    album: "Infectado",
-    audio: "https://demo-fxrl16.s3.amazonaws.com/AMEN-LaChata.mp3",
-    duration: 194,
+    album: "Butter",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/BTS+-Butter.mp3",
+    duration: 165,
     imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/9b99e2d4393aa202d25f7773091594c2/500x500-000000-80-0-0.jpg",
+      "https://e-cdns-images.dzcdn.net/images/cover/0cc1c0ada6f9aab8128e7d8a7d61aec2/500x500-000000-80-0-0.jpg",
     imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/66481c198e130c9e94a109334df01e0d/250x250-000000-80-0-0.jpg",
-    singer: "Amen",
-    title: "La Chata",
+      "https://e-cdns-images.dzcdn.net/images/artist/f7cbf03e5b0963a68f51c68f20c919cb/250x250-000000-80-0-0.jpg",
+    singer: "BTS",
+    title: "Butter",
   },
   {
-    album: "Smoke + Mirrors (Deluxe)",
-    audio: "https://demo-fxrl16.s3.amazonaws.com/IMAGINE_DRAGONS-ImSoSorry.mp3",
-    duration: 230,
+    album: "Valio La Pena",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/MARC_ANTONHY-AhoraQuien.mp3",
+    duration: 311,
     imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/f778ecc964c57c30c082444c22bf3264/500x500-000000-80-0-0.jpg",
+      "https://e-cdns-images.dzcdn.net/images/cover/22af1faf316c4e61fbc890b750f28e1e/250x250-000000-80-0-0.jpg",
     imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/a9087f289c3bd826eb8c8bd48cd11f1e/250x250-000000-80-0-0.jpg",
-    singer: "Imagine Dragons",
-    title: "Im So Sorry",
+      "https://e-cdns-images.dzcdn.net/images/artist/0fad6583d2baad8b8e8a27cef8688c25/500x500-000000-80-0-0.jpg",
+    singer: "Marc Anthony",
+    title: "Ahora Quien",
   },
   {
     album: "Birds In The Trap Sing McKnight",
@@ -90,15 +90,15 @@ let playList = [
     title: "Te Quiero",
   },
   {
-    album: "Sueños",
-    audio: "https://demo-fxrl16.s3.amazonaws.com/AUTOCONTROL-fantasy.mp3",
-    duration: 287,
+    album: "Escapology",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/ROBBIE_WILLIAMS-Feel.mp3",
+    duration: 259,
     imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/01f906e99de2b16f2b725228ecffe6c8/500x500-000000-80-0-0.jpg",
+      "https://e-cdns-images.dzcdn.net/images/cover/147bdb75eec59a4cafe05bd2fb92e46d/500x500-000000-80-0-0.jpg",
     imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/01f906e99de2b16f2b725228ecffe6c8/250x250-000000-80-0-0.jpg",
-    singer: "Autocontrol",
-    title: "Fantasy",
+      "https://e-cdns-images.dzcdn.net/images/artist/e8400d3544e4720ba2c6e827d1de59b0/250x250-000000-80-0-0.jpg",
+    singer: "Robbie Williams",
+    title: "Feel",
   },
   {
     album: "Lazarus",
@@ -112,27 +112,27 @@ let playList = [
     title: "Billionaire (feat. Bruno Mars)",
   },
   {
-    album: "Future Nostalgia",
-    audio: "https://demo-fxrl16.s3.amazonaws.com/DUA_LIPA-Physical.mp3",
-    duration: 194,
+    album: "Amar es Combatir",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/MANA-LabiosCompartidos.mp3",
+    duration: 271,
     imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/d0f8d853e871838a4a6d8e5b7cdd1432/500x500-000000-80-0-0.jpg",
+      "https://e-cdns-images.dzcdn.net/images/cover/384fb92f4ad9c4f74297ac3a30aab36f/500x500-000000-80-0-0.jpg",
     imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/e6a04d735093a46dcc8be197681d1199/250x250-000000-80-0-0.jpg",
-    singer: "Dua Lipa",
-    title: "Physical",
+      "https://e-cdns-images.dzcdn.net/images/artist/8471c0b3e261581bb4904ef41fd4852a/250x250-000000-80-0-0.jpg",
+    singer: "Maná",
+    title: "Labios Compartidos",
   },
   {
-    album: "Feels Like Summer",
+    album: "Masterpiece : Commemorative Edition",
     audio:
-      "https://demo-fxrl16.s3.amazonaws.com/SAMUEL_JACK-FeelsLikeSummer.mp3",
-    duration: 187,
+      "https://demo-fxrl16.s3.amazonaws.com/RAKIM_Y_KEN_Y-Lloraras.mp3",
+    duration: 241,
     imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/5c04a779405dab12faa96784cec674a8/500x500-000000-80-0-0.jpg",
+      "https://e-cdns-images.dzcdn.net/images/cover/8c617dd03b130cb3b7f83972b31d05a3/500x500-000000-80-0-0.jpg",
     imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/5842e90c035b7ec5e47269c89982f683/250x250-000000-80-0-0.jpg",
-    singer: "Samuel Jack",
-    title: "Feels Like Summer",
+      "https://e-cdns-images.dzcdn.net/images/artist/dc464366754ea4a04d3d543b87c95829/250x250-000000-80-0-0.jpg",
+    singer: "R.K.M & Ken-Y",
+    title: "Llorarás",
   },
   {
     album: "Todo De Ti",
