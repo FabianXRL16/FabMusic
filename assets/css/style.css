@@ -127,6 +127,7 @@
   justify-content: flex-end;
   padding: 0;
   margin: 8px 0 0 auto;
+  cursor: auto;
 }
 .playList .list {
   width: 100%;
