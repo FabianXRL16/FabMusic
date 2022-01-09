@@ -10,6 +10,7 @@ import {
   $next,
   $repeat,
   playList,
+  $point,
 } from "../utils/const.js";
 
 import song from "./item.js";
@@ -107,6 +108,7 @@ function toShowCurrentSong(item) {
   $nameSong.innerHTML = item.title;
   $singer.innerHTML = item.singer;
   $albumName.innerHTML = item.album;
+  $point.innerHTML = item.score.toFixed(1);
 }
 
 function mediaPlayer(e) {
