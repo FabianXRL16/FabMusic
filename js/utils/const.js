@@ -36,16 +36,16 @@ let playList = [
     score: 4.3,
   },
   {
-    album: "Birds In The Trap Sing McKnight",
-    audio: "https://demo-fxrl16.s3.amazonaws.com/TRAVIS_SCOTT-goosebumps.mp3",
-    duration: 244,
+    album: "Soy el Mismo",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/PRINCE_ROYCE-TeRobare.mp3",
+    duration: 210,
     imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/b4edc0fc32f430870375f8fb8f825ee7/500x500-000000-80-0-0.jpg",
+      "https://e-cdns-images.dzcdn.net/images/cover/e36d44f72417bafc57a7ef7d78e018df/500x500-000000-80-0-0.jpg",
     imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/79146f056c0ec39873ed2acd06fe1cf4/250x250-000000-80-0-0.jpg",
-    singer: "Travis Scott",
-    title: "Goosebumps",
-    score: 3.1,
+      "https://e-cdns-images.dzcdn.net/images/artist/92982ac686986cc0247afb9d9ccc6531/250x250-000000-80-0-0.jpg",
+    singer: "Prince Royce ",
+    title: "Te Robaré",
+    score: 4.1,
   },
   {
     album: "For You",
@@ -70,7 +70,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/a9707ea80e5a8a903e1b4f87decf75ad/250x250-000000-80-0-0.jpg",
     singer: "Rio",
     title: "Todo Estaba Bien",
-    score: 3.8,
+    score: 3.6,
   },
   {
     album: "Lo Que Andábamos Buscando (Special Para CEV)",
@@ -107,7 +107,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/66481c198e130c9e94a109334df01e0d/250x250-000000-80-0-0.jpg",
     singer: "Amén",
     title: "Te Quiero",
-    score: 3.9,
+    score: 3.8,
   },
   {
     album: "Escapology",
@@ -134,16 +134,16 @@ let playList = [
     score: 4.0,
   },
   {
-    album: "Todo De Ti",
-    audio: "https://demo-fxrl16.s3.amazonaws.com/RAUW_ALEJANDRO-TodoDeTi.mp3",
-    duration: 203,
+    album: "Perfecta",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/REIK_ft_MALUMA-Perfecta.mp3",
+    duration: 174,
     imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/7167a61f54a62c453f4d99ee59c151a4/500x500-000000-80-0-0.jpg",
+      "https://e-cdns-images.dzcdn.net/images/cover/1ee8e15a7f17e711339947bacfa56ce8/500x500-000000-80-0-0.jpg",
     imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/cbc5976deee3b1e86d44c1837486804f/250x250-000000-80-0-0.jpg",
-    singer: "Rauw Alejandro",
-    title: "Todo De Ti",
-    score: 3.6,
+      "https://e-cdns-images.dzcdn.net/images/artist/32424c8189599c01667e724bf3eb64e7/250x250-000000-80-0-0.jpg",
+    singer: "Reik, Maluma",
+    title: "Perfecta",
+    score: 3.9,
   },
   {
     album: "Flashdance (Original Soundtrack From The Motion Picture)",
@@ -158,16 +158,16 @@ let playList = [
     score: 4.1,
   },
   {
-    album: "The Very Best of Billy Ocean",
+    album: "Purpose (Deluxe)",
     audio:
-      "https://demo-fxrl16.s3.amazonaws.com/BILLY_OCEAN-CaribbeanQueen.mp3",
+      "https://demo-fxrl16.s3.amazonaws.com/JUSTIN_BIEBER-Company.mp3",
     duration: 232,
     imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/8ba46c9d4354710600f14508eaa76d8d/500x500-000000-80-0-0.jpg",
+      "https://e-cdns-images.dzcdn.net/images/cover/340283aafac320864b207c420124ee46/500x500-000000-80-0-0.jpg",
     imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/6af6e846e59b5b1a34fca0d3a4fd5a41/250x250-000000-80-0-0.jpg",
-    singer: "Billy Ocean",
-    title: "Caribbean Queen (No More Love On the Run)",
+      "https://e-cdns-images.dzcdn.net/images/artist/22dd86b628a03d8dad3c7dfb33320a91/250x250-000000-80-0-0.jpg",
+    singer: "Justin Bieber",
+    title: "Company",
     score: 3.9,
   },
   {
