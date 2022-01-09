@@ -1,25 +1,25 @@
 let playList = [
   {
-    album: "Donde Vamos a Parar",
-    audio: "https://demo-fxrl16.s3.amazonaws.com/RIO-TodoEstabaBien.mp3",
-    duration: 287,
+    album: "Amar es Combatir",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/MANA-LabiosCompartidos.mp3",
+    duration: 271,
     imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/275849fe117e4608c052244b42ae4b71/500x500-000000-80-0-0.jpg",
+      "https://e-cdns-images.dzcdn.net/images/cover/384fb92f4ad9c4f74297ac3a30aab36f/500x500-000000-80-0-0.jpg",
     imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/a9707ea80e5a8a903e1b4f87decf75ad/250x250-000000-80-0-0.jpg",
-    singer: "Rio",
-    title: "Todo Estaba Bien",
+      "https://e-cdns-images.dzcdn.net/images/artist/8471c0b3e261581bb4904ef41fd4852a/250x250-000000-80-0-0.jpg",
+    singer: "Maná",
+    title: "Labios Compartidos",
   },
   {
-    album: "Butter",
-    audio: "https://demo-fxrl16.s3.amazonaws.com/BTS+-Butter.mp3",
-    duration: 165,
+    album: "Masterpiece : Commemorative Edition",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/RAKIM_Y_KEN_Y-Lloraras.mp3",
+    duration: 241,
     imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/0cc1c0ada6f9aab8128e7d8a7d61aec2/500x500-000000-80-0-0.jpg",
+      "https://e-cdns-images.dzcdn.net/images/cover/8c617dd03b130cb3b7f83972b31d05a3/500x500-000000-80-0-0.jpg",
     imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/f7cbf03e5b0963a68f51c68f20c919cb/250x250-000000-80-0-0.jpg",
-    singer: "BTS",
-    title: "Butter",
+      "https://e-cdns-images.dzcdn.net/images/artist/dc464366754ea4a04d3d543b87c95829/250x250-000000-80-0-0.jpg",
+    singer: "R.K.M & Ken-Y",
+    title: "Llorarás",
   },
   {
     album: "Valio La Pena",
@@ -54,6 +54,28 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/a4e8d3ca37569dccb17f7a3b2ebc950e/250x250-000000-80-0-0.jpg",
     singer: "Selena Gomez",
     title: "Love You Like A Love Song",
+  },
+  {
+    album: "Donde Vamos a Parar",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/RIO-TodoEstabaBien.mp3",
+    duration: 287,
+    imgAlbum:
+      "https://e-cdns-images.dzcdn.net/images/cover/275849fe117e4608c052244b42ae4b71/500x500-000000-80-0-0.jpg",
+    imgSinger:
+      "https://e-cdns-images.dzcdn.net/images/artist/a9707ea80e5a8a903e1b4f87decf75ad/250x250-000000-80-0-0.jpg",
+    singer: "Rio",
+    title: "Todo Estaba Bien",
+  },
+  {
+    album: "Butter",
+    audio: "https://demo-fxrl16.s3.amazonaws.com/BTS+-Butter.mp3",
+    duration: 165,
+    imgAlbum:
+      "https://e-cdns-images.dzcdn.net/images/cover/0cc1c0ada6f9aab8128e7d8a7d61aec2/500x500-000000-80-0-0.jpg",
+    imgSinger:
+      "https://e-cdns-images.dzcdn.net/images/artist/f7cbf03e5b0963a68f51c68f20c919cb/250x250-000000-80-0-0.jpg",
+    singer: "BTS",
+    title: "Butter",
   },
   {
     album: "Lo Que Andábamos Buscando (Special Para CEV)",
@@ -110,29 +132,6 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/54d69cc301f3d86f4bda1876aecff178/250x250-000000-80-0-0.jpg",
     singer: "Travie McCoy, Bruno Mars",
     title: "Billionaire (feat. Bruno Mars)",
-  },
-  {
-    album: "Amar es Combatir",
-    audio: "https://demo-fxrl16.s3.amazonaws.com/MANA-LabiosCompartidos.mp3",
-    duration: 271,
-    imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/384fb92f4ad9c4f74297ac3a30aab36f/500x500-000000-80-0-0.jpg",
-    imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/8471c0b3e261581bb4904ef41fd4852a/250x250-000000-80-0-0.jpg",
-    singer: "Maná",
-    title: "Labios Compartidos",
-  },
-  {
-    album: "Masterpiece : Commemorative Edition",
-    audio:
-      "https://demo-fxrl16.s3.amazonaws.com/RAKIM_Y_KEN_Y-Lloraras.mp3",
-    duration: 241,
-    imgAlbum:
-      "https://e-cdns-images.dzcdn.net/images/cover/8c617dd03b130cb3b7f83972b31d05a3/500x500-000000-80-0-0.jpg",
-    imgSinger:
-      "https://e-cdns-images.dzcdn.net/images/artist/dc464366754ea4a04d3d543b87c95829/250x250-000000-80-0-0.jpg",
-    singer: "R.K.M & Ken-Y",
-    title: "Llorarás",
   },
   {
     album: "Todo De Ti",
