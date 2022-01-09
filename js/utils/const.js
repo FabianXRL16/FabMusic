@@ -9,6 +9,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/8471c0b3e261581bb4904ef41fd4852a/250x250-000000-80-0-0.jpg",
     singer: "Maná",
     title: "Labios Compartidos",
+    score: 4.2,
   },
   {
     album: "Masterpiece : Commemorative Edition",
@@ -20,6 +21,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/dc464366754ea4a04d3d543b87c95829/250x250-000000-80-0-0.jpg",
     singer: "R.K.M & Ken-Y",
     title: "Llorarás",
+    score: 3.7,
   },
   {
     album: "Valio La Pena",
@@ -31,6 +33,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/0fad6583d2baad8b8e8a27cef8688c25/500x500-000000-80-0-0.jpg",
     singer: "Marc Anthony",
     title: "Ahora Quien",
+    score: 4.3,
   },
   {
     album: "Birds In The Trap Sing McKnight",
@@ -42,6 +45,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/79146f056c0ec39873ed2acd06fe1cf4/250x250-000000-80-0-0.jpg",
     singer: "Travis Scott",
     title: "Goosebumps",
+    score: 3.1,
   },
   {
     album: "For You",
@@ -54,6 +58,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/a4e8d3ca37569dccb17f7a3b2ebc950e/250x250-000000-80-0-0.jpg",
     singer: "Selena Gomez",
     title: "Love You Like A Love Song",
+    score: 3.9,
   },
   {
     album: "Donde Vamos a Parar",
@@ -65,6 +70,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/a9707ea80e5a8a903e1b4f87decf75ad/250x250-000000-80-0-0.jpg",
     singer: "Rio",
     title: "Todo Estaba Bien",
+    score: 3.8,
   },
   {
     album: "Lo Que Andábamos Buscando (Special Para CEV)",
@@ -77,6 +83,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/11ab5eec566184ae1c339ad70b37fe0a/250x250-000000-80-0-0.jpg",
     singer: "Elefante",
     title: "De la Noche a la Mañana",
+    score: 3.9,
   },
   {
     album: "Future Nostalgia",
@@ -88,6 +95,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/e6a04d735093a46dcc8be197681d1199/250x250-000000-80-0-0.jpg",
     singer: "Dua Lipa",
     title: "Break My Heart",
+    score: 4.0,
   },
   {
     album: "Libre",
@@ -99,6 +107,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/66481c198e130c9e94a109334df01e0d/250x250-000000-80-0-0.jpg",
     singer: "Amén",
     title: "Te Quiero",
+    score: 3.9,
   },
   {
     album: "Escapology",
@@ -110,6 +119,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/e8400d3544e4720ba2c6e827d1de59b0/250x250-000000-80-0-0.jpg",
     singer: "Robbie Williams",
     title: "Feel",
+    score: 4.0,
   },
   {
     album: "Lazarus",
@@ -121,6 +131,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/54d69cc301f3d86f4bda1876aecff178/250x250-000000-80-0-0.jpg",
     singer: "Travie McCoy, Bruno Mars",
     title: "Billionaire (feat. Bruno Mars)",
+    score: 4.0,
   },
   {
     album: "Todo De Ti",
@@ -132,6 +143,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/cbc5976deee3b1e86d44c1837486804f/250x250-000000-80-0-0.jpg",
     singer: "Rauw Alejandro",
     title: "Todo De Ti",
+    score: 3.6,
   },
   {
     album: "Flashdance (Original Soundtrack From The Motion Picture)",
@@ -143,6 +155,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/aa1a7fb8e001c285e048d7f3fb1bb2ac/250x250-000000-80-0-0.jpg",
     singer: "Michael Sembello",
     title: "Maniac",
+    score: 4.1,
   },
   {
     album: "The Very Best of Billy Ocean",
@@ -155,6 +168,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/6af6e846e59b5b1a34fca0d3a4fd5a41/250x250-000000-80-0-0.jpg",
     singer: "Billy Ocean",
     title: "Caribbean Queen (No More Love On the Run)",
+    score: 3.9,
   },
   {
     album: "The Blueprint 3",
@@ -166,6 +180,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/90fab088c4d091618e7386f688803673/250x250-000000-80-0-0.jpg",
     singer: "JAY-Z, Alicia Keys",
     title: "Empire State Of Mind",
+    score: 3.9,
   },
   {
     album: "Butter",
@@ -177,6 +192,7 @@ let playList = [
       "https://e-cdns-images.dzcdn.net/images/artist/f7cbf03e5b0963a68f51c68f20c919cb/250x250-000000-80-0-0.jpg",
     singer: "BTS",
     title: "Butter",
+    score: 4.0,
   },
 ];
 
@@ -185,6 +201,7 @@ let $input = document.querySelector(".input");
 let $album = document.querySelector(".album");
 let $singer = document.querySelector(".singer");
 let $albumName = document.querySelector(".albumName");
+let $point = document.querySelector(".point");
 
 let audios = [];
 
@@ -201,6 +218,7 @@ export {
   $album,
   $singer,
   $albumName,
+  $point,
   audios,
   $nameSong,
   $random,
